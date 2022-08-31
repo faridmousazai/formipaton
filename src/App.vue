@@ -4,7 +4,20 @@
     <router-link to="/about">About</router-link>
   </nav>
   <router-view/>
+  <HomePage msg="Welcome to FARMIPATON"/>
+  
 </template>
+
+<script>
+import HomePage from './components/HomePage.vue'
+
+export default {
+  name: 'App',
+  components: {
+    HomePage
+  }
+}
+</script>
 
 <style>
 #app {
