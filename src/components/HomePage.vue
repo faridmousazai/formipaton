@@ -5,13 +5,15 @@
       <input class="search"   type="text" v-model="search" placeholder="Search" />
     </div>
     <div class="hamburger-menu">
-    <input id="menu__toggle" type="checkbox" />
+      <input id="menu__toggle" type="checkbox" />
     <label class="menu__btn" for="menu__toggle">
       <span></span>
     </label>
 
     <ul class="menu__box">
-      <li><a class="menu__item" href="#">Home</a></li>
+
+      <li><router-link to="/" class="menu__item">Home</router-link></li>
+      <li><router-link to="/about" class="menu__item">About</router-link></li>
       <li class="menu__item">
         <a class="item" href="#">Recettes</a>
         <ul class="submenu__box">
@@ -46,7 +48,7 @@
         </ul>
       </li>
 
-      <li><a class="menu__item" href="#">Twitter</a></li>
+      <li><a class="menu__item" href="#">Recettes par ingrediants</a></li>
     </ul>
   </div>
     </header>
