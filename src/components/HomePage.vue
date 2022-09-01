@@ -55,6 +55,7 @@
   </div>
     </header>
    
+<<<<<<< HEAD
     <div class="lesbloc">
       <div class="bloc">
         <h2></h2>
@@ -67,6 +68,8 @@
     </div>
       
   </div>         
+=======
+>>>>>>> 707844b (béta affichage recette)
   </body>
   
 
