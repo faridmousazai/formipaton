@@ -25,7 +25,7 @@
     </ul>
   </div>
     </header>
-    <h1>{{ msg }}</h1>
+   
   </body>
   
 
@@ -48,7 +48,7 @@ export default {
   .menu__item:hover ~ .submenu__box { display: block}
   body{
     background-color: rgba(20, 18, 18, 0.883);
-    height: 100vh;
+    height: 10vh;
     width: 100vw;
   }
   h1{
