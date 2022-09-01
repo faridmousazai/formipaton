@@ -1,11 +1,19 @@
 <template>
   <nav>
     <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+    <router-link to="/about">About</router-link>|
+    <router-link to="/login">Login</router-link>|
+    <router-link to="/createaccount">CreateAccount</router-link>|
+    <router-link to="/AffichageRecette">AffichageRecette</router-link>|
+    <router-link to="/PreparationRecette">PreparationRecette</router-link>|
+    <router-link to="/CreateRecette">CreateRecette</router-link>|
+    <router-link to="/DeleteRecette">DeleteRecette</router-link>|
+    <router-link to="/EditRecette">EditRecette</router-link>|
+
   </nav>
-  <router-view/>
-  <HomePage msg="Welcome to FARMIPATON"/>
-  
+  <router-view />
+  <HomePage msg="Welcome to FARMIPATON" />
+
 </template>
 
 <script>
