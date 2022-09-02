@@ -1,7 +1,11 @@
 <template>
   <nav>
+<<<<<<< HEAD
    <!-- <router-link to="/">Home</router-link> |
     <router-link to="/about">About</router-link>|
+=======
+    <router-link to="/">Home</router-link> |
+>>>>>>> 0292144 (retrait router about app.vue)
     <router-link to="/login">Login</router-link>|
     <router-link to="/createaccount">CreateAccount</router-link>|
     <router-link to="/AffichageRecette">AffichageRecette</router-link>|
