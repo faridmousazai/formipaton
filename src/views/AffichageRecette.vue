@@ -18,7 +18,13 @@
           Integer mi erat, euismod eget ligula vitae, ornare fringilla quam. 
         </div>
      </div>
+     <br>
+     <br>
         <input type="button" value="nb convives:">
+    <div class="tableau">
+        <div class="case" v-for="i in 6" :data-index="i" :key="i"></div>
+    </div>
+
      </div>    
 </template>
 
@@ -41,6 +47,14 @@ export default {
      text-align: justify;
      text-align: center;
   }
+  .tableau{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 80vw;
+    height: 20vh;
+    margin: auto;
+    border: 1px solid black;  
+    }
  
   
   
