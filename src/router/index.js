@@ -2,7 +2,7 @@ import { createRouter, createWebHistory } from "vue-router";
 import HomeView from "../views/HomeView.vue";
 import LoginView from "../views/LoginView.vue";
 import CreateAccount from "../views/CreateAccount.vue";
-import AffichageRecette from "../views/AffichageRecette.vue";
+import Recettes from "../views/Recettes.vue";
 import PreparationRecette from "../views/PreparationRecette.vue";
 import CreateRecette from "../views/CreateRecette.vue";
 import DeleteRecette from "../views/DeleteRecette.vue";
@@ -30,9 +30,9 @@ const routes = [
     component: CreateAccount,
   },
   {
-    path: "/affichagerecette",
-    name: "AffichageRecette",
-    component: AffichageRecette,
+    path: "/recettes",
+    name: "Recettes",
+    component: Recettes,
   },
   {
     path: "/preparationrecette",
