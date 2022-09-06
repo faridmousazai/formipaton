@@ -18,9 +18,11 @@
         <br>
         <br>
     <div class="tableau">
-       <div class="case" v-for="i in 6" :data-index="i" :key="i"></div>
-    </div>
-
+       <div class="case" v-for="i in ingredients" :data-index="i" :key="i">
+         {{i}}
+       </div>
+      </div>
+      {{recette_has_ingredient}}
      </div>    
 </template>
 
@@ -28,22 +30,29 @@
 export default {
    
    created() {
-      fetch("https://api.airtable.com/v0/appT0bvntx0RS1M8p/Recette/rectxIKMHXVmxzwyE", 
-      {headers: new Headers({
+      const options = {headers: new Headers({
         'Authorization': 'Bearer '+process.env.VUE_APP_AIRTABLE_APITOKEN, 
         
-    })})
+    })};
+      fetch("https://api.airtable.com/v0/appT0bvntx0RS1M8p/Recette/rectxIKMHXVmxzwyE", 
+      options)
       .then(data => data.json())
       .then(data => {
+         console.log(data.fields)
          this.description = data.fields.Description
          this.name = data.fields.Name
-         this.ingredient = data.fields.Ingredient
+         this.ingredients = data.fields.Recette_has_Ingredient
       })
+
+      fetch("https://api.airtable.com/v0/appT0bvntx0RS1M8p/Recette_has_Ingredient?maxRecords=3&view=Grid%20view", options)
+      .then(data => data.json())
+      .then(data => this.recette_has_ingredient = data.records)
+      
    },
  data() {
    return {
       description: "Lorem ipsum dolor sit amet,consectetur adipiscing elit. Aliquam lacinia ante lacus, a blandit orci varius vitae. Mauris pretium iaculis aliquam. Donec eget tellus tempor, interdum tellus ac, interdum augue. Nullam tincidunt malesuada placerat. Nulla blandit ante id fringilla ornare.In quis velit varius, condimentum augue id, efficitur odio. Sed faucibus metus non tellus feugiat efficitur. Sed elementum lacus a diam aliquam ullamcorper.Nullam in bibendum nisl. Integer mi erat, euismod eget ligula vitae, ornare fringilla quam.",
-      
+      recette_has_ingredient: []
    }
  }
 }
