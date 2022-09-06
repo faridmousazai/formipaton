@@ -15,9 +15,9 @@
     <router-link to="/EditRecette">EditRecette</router-link>|-->
 
   </nav>
-  <HomePage msg="Welcome to FARMIPATON"/>
-  <router-view/>
-  
+  <HomePage msg="Welcome to FARMIPATON" />
+  <router-view />
+
 </template>
 
 <script>
@@ -27,7 +27,8 @@ export default {
   name: 'App',
   components: {
     HomePage
-  }
+  },
+
 }
 </script>
 
@@ -38,6 +39,7 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+
 }
 
 
