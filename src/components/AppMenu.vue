@@ -10,8 +10,13 @@
 
       <li><router-link to="/" class="menu__item">Home</router-link></li>
       <li><router-link to="/login" class="menu__item">Login</router-link></li>
+      <li><router-link to="/createaccount" class="menu__item">Creer un Account</router-link></li>
+
       <li><router-link to="/Recettes" class="menu__item">Recettes</router-link></li>
-      <li class="menu__item">
+      <li><router-link to="/CreateRecette" class="menu__item">Creation Recette</router-link></li>
+      <li><router-link to="/DeleteRecette" class="menu__item">Effacer Recette</router-link></li>
+      <li><router-link to="/EditRecette" class="menu__item">Modifier Recette</router-link></li>
+      <!--<li class="menu__item">
         <a class="item" href="#">Recettes</a>
         <ul class="submenu__box">
           <li>
@@ -45,7 +50,7 @@
         </ul>
       </li>
 
-      <li><a class="menu__item" href="#">Recettes par ingredients</a></li>
+      <li><a class="menu__item" href="#">Recettes par ingredients</a></li>-->
     </ul>
   </div>
    
@@ -104,7 +109,7 @@
   padding: 80px 0;
   list-style: none;
   background-color: #ECEFF1;
-  box-shadow: 2px 2px 6px rgba(231, 223, 223, 0.4);
+  box-shadow: 2px 2px 6px rgba(197, 214, 211, 0.4);
   transition-duration: .25s;
 }
 .menu__item {
