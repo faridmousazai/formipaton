@@ -65,9 +65,9 @@ export default {
     },
     methods: {
         Checklogin() {
-            if (this.input.username != "" && this.input.password != "") {
+            // if (this.input.username != "" && this.input.password != "") {
 
-            }
+            // }
         }
     }
 
