@@ -8,6 +8,10 @@ import CreateRecette from "../views/CreateRecette.vue";
 import DeleteRecette from "../views/DeleteRecette.vue";
 import EditRecette from "../views/EditRecette.vue";
 
+
+
+
+
 const routes = [
   {
     path: "/",
@@ -50,6 +54,8 @@ const routes = [
     name: "EditRecette",
     component: EditRecette,
   },
+
+
 ];
 
 const router = createRouter({
