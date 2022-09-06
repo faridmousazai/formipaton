@@ -55,18 +55,6 @@
   </div>
     </header>
    
-    <div class="lesbloc">
-      <div class="bloc">
-        <h2></h2>
-      <img class="image" src="https://assets.afcdn.com/recipe/20200820/113189_w1024h778c1cx2975cy2041cxb5700cyb3805.webp" alt="">
-      </div>
-      <div class="bloc">
-      </div>
-      <div class="bloc">
-      </div>
-    </div>
-      
-  </div>         
   </body>
   
 
