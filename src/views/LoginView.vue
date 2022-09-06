@@ -1,5 +1,5 @@
  
-    <template>
+<template>
 
     <body>
         <span>Users available: {{ possibleUsers }}</span>
@@ -16,13 +16,15 @@
             </li>
         </ul>
 
-    </body>
-    <div id="login">
-
         <input type="text" name="username" v-model="input.username" placeholder="Username" />
+        <br>
+        <br>
         <input type="password" name="password" v-model="input.password" placeholder="Password" />
-        <button type="button" v-on:click="login()">Login</button>
-    </div>
+        <br>
+        <br>
+        <button type="button" v-on:click="Checklogin()">Login</button>
+    </body>
+
 </template>
 
 <script>
@@ -53,11 +55,24 @@ export default {
                     Role: 'Visiteur',
                     mdp: '3456'
                 },
-            ]
+            ],
+            name: 'CheckLogin',
+            input: {
+                username: "",
+                password: ""
+            },
+        }
+    },
+    methods: {
+        Checklogin() {
+            if (this.input.username != "" && this.input.password != "") {
+
+            }
         }
     }
-}
 
+
+}
 
 
 
