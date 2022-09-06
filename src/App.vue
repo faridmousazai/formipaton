@@ -3,25 +3,28 @@
     <router-link to="/">Home</router-link> |
     <router-link to="/login">Login</router-link>|
     <router-link to="/createaccount">CreateAccount</router-link>|
-    <router-link to="/AffichageRecette">AffichageRecette</router-link>|
+    <router-link to="/Recettes">Recettes</router-link>|
     <router-link to="/PreparationRecette">PreparationRecette</router-link>|
     <router-link to="/CreateRecette">CreateRecette</router-link>|
     <router-link to="/DeleteRecette">DeleteRecette</router-link>|
     <router-link to="/EditRecette">EditRecette</router-link>|-->
 
   </nav>
-  <HomePage msg="Welcome to FARMIPATON"/>
+  <AppMenu />
+  <AppSearch/>
   <router-view/>
-  
+
 </template>
 
 <script>
-import HomePage from './components/HomePage.vue'
-
+//
+import AppMenu from "@/components/AppMenu.vue"
+import AppSearch from "@/components/AppSearch.vue"
 export default {
   name: 'App',
   components: {
-    HomePage
+    AppMenu,
+    AppSearch
   }
 }
 </script>
