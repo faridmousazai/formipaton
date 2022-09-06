@@ -1,4 +1,7 @@
 <template>
+   <body>
+      
+   
      <div class="main">
         <h1> nom de la recette </h1>
 
@@ -17,6 +20,7 @@
      <input type="button" value="nb convives:">
       
     </div>
+   </body>
 </template>
 
 <script>
@@ -25,5 +29,8 @@ export default {
 }
 </script>
 <style scoped>
-  
+  body{
+   background-color: antiquewhite;
+   height: 100vh;
+  }
 </style>

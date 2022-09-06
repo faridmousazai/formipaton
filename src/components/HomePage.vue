@@ -1,5 +1,6 @@
 <template>
   <body>
+    <div>
     <header>
     <div >
       <input class="search"   type="text" v-model="search" placeholder="Search" />
@@ -8,12 +9,13 @@
       <input id="menu__toggle" type="checkbox" />
     <label class="menu__btn" for="menu__toggle">
       <span></span>
-    </label>
+    </label>-->
 
     <ul class="menu__box">
 
       <li><router-link to="/" class="menu__item">Home</router-link></li>
       <li><router-link to="/about" class="menu__item">About</router-link></li>
+      <li><router-link to="/login" class="menu__item">Login</router-link></li>
       <li class="menu__item">
         <a class="item" href="#">Recettes</a>
         <ul class="submenu__box">
@@ -48,11 +50,23 @@
         </ul>
       </li>
 
-      <li><a class="menu__item" href="#">Recettes par ingrediants</a></li>
+      <li><a class="menu__item" href="#">Recettes par ingredients</a></li>
     </ul>
   </div>
     </header>
-    <h1>{{ msg }}</h1>
+   
+    <div class="lesbloc">
+      <div class="bloc">
+        <h2></h2>
+      <img class="image" src="https://assets.afcdn.com/recipe/20200820/113189_w1024h778c1cx2975cy2041cxb5700cyb3805.webp" alt="">
+      </div>
+      <div class="bloc">
+      </div>
+      <div class="bloc">
+      </div>
+    </div>
+      
+  </div>         
   </body>
   
 
@@ -74,7 +88,7 @@ export default {
  
   body{
     background-color: rgba(20, 18, 18, 0.883);
-    height: 100vh;
+    height: 10vh;
     width: 100vw;
   }
   h1{
@@ -82,7 +96,7 @@ export default {
  color: rgb(128, 142, 153);
  margin-top: 2rem;
 }
-.search{
+.search {
 margin-top: 1rem;
 width: 30vw;
 height: 2rem;
@@ -93,6 +107,7 @@ border-radius: 10px;
 }
 
 
+
 #menu__toggle:checked + .menu__btn > span::after {
   top: 0;
   transform: rotate(90deg);
@@ -101,7 +116,7 @@ border-radius: 10px;
   left: 0 !important;
 }
 .menu__btn {
-  position: fixed;
+  position: absolute;
   top: 20px;
   left: 20px;
   width: 30px;
@@ -185,5 +200,24 @@ border-radius: 10px;
   font-size: 2em;
 }
   .menu__item:hover .submenu__box { display: block}
+.lesbloc{
+  display: flex;
+  flex-direction: row;
+  background-color: #ebdada;
+  margin: auto;
+}
+
+.bloc {
+  width: 33.3vw;
+  height: 100vh;
+  border: solid black 1px;
+  
+}
+.image{
+  height: 35vh;
+  width: 25vw;
+}
+
+
 
 </style>
