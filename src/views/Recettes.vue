@@ -4,7 +4,7 @@
        <h1> {{name}} </h1>
        <div class="recette">
         <div class="image">
-       <img src="../assets/images/muffin.jpg" alt="ça à l'air trop bon!">
+       <img src="https://fr.chatelaine.com/wp-content/uploads/2021/06/MuffinsRhubarbeOrange_580x434.jpg" alt="ça à l'air trop bon!">
      </div>
      <div class="texte">
        <h3>Description</h3>
@@ -22,8 +22,7 @@
          {{i}}
        </div>
       </div>
-      {{recette_has_ingredient}}
-     </div>    
+      </div>    
 </template>
 
 <script>
@@ -46,16 +45,19 @@ export default {
 
       fetch("https://api.airtable.com/v0/appT0bvntx0RS1M8p/Recette_has_Ingredient?maxRecords=3&view=Grid%20view", options)
       .then(data => data.json())
-      .then(data => this.recette_has_ingredient = data.records)
+      .then(data => this.$store.dispatch("recette/load", data))
       
    },
  data() {
    return {
       description: "Lorem ipsum dolor sit amet,consectetur adipiscing elit. Aliquam lacinia ante lacus, a blandit orci varius vitae. Mauris pretium iaculis aliquam. Donec eget tellus tempor, interdum tellus ac, interdum augue. Nullam tincidunt malesuada placerat. Nulla blandit ante id fringilla ornare.In quis velit varius, condimentum augue id, efficitur odio. Sed faucibus metus non tellus feugiat efficitur. Sed elementum lacus a diam aliquam ullamcorper.Nullam in bibendum nisl. Integer mi erat, euismod eget ligula vitae, ornare fringilla quam.",
-      recette_has_ingredient: []
-   }
- }
-}
+      recette_has_ingredient: [],
+      ingredientNom :"",
+      consolelog(ingredientNom)
+   },
+}     
+ 
+
 </script>
 <style scoped>
   .recette{

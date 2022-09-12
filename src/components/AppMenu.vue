@@ -62,7 +62,6 @@
     }
 </script>
 <style scoped>
-
     
 #menu__toggle:checked + .menu__btn > span::after {
   top: 0;
@@ -143,20 +142,14 @@
   position: absolute;
   left: 0;
 } 
-.submenu__item, .item{
-  color: #374141;
-  text-decoration: none;
-}
-.submenu__item{
-  color:#6a787d;
-  list-style:square;
-  font-size: 13px;
-}
-.icon{
-  font-size: 2em;
-}
+
+
+
   .menu__item:hover .submenu__box { display: block}
 
-  
+  #menu__toggle {
+    display: none !important;
+    /* visibility: hidden; */
+  }
 
 </style>
