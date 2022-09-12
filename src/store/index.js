@@ -1,6 +1,6 @@
 import { createStore } from "vuex";
 import recette from "./recette";
-
+import ingredient from "./ingredient";
 export default createStore({
   state: {
     test: "PATOCHE IS NOT A POTACHE",
@@ -10,5 +10,6 @@ export default createStore({
   actions: {},
   modules: {
     recette,
+    ingredient,
   },
 });

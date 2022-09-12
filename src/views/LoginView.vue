@@ -1,7 +1,11 @@
  
 <template>
+<<<<<<< HEAD
 <body>
    <h1>Login</h1> 
+=======
+    <h1>Login</h1>
+>>>>>>> 3666883ecd5518da85a460c14829413ec1a411db
 
     <div class="login">
         <input type="text" v-model="email" placeholder="Enter Your Email">
@@ -38,8 +42,8 @@
 </body>
 </template>
 
-<script>
-/*export default {
+<!--<script>
+export default {
     computed: {
         possibleUsers() {
             return this.tabUsers.filter((user) => user.Role == this.selected)
@@ -73,26 +77,20 @@
                 password: ""
             },
         }
-    },
-    methods: {
-        Checklogin() {
-            // if (this.input.username != "" && this.input.password != "") {
-
-            // }
-        }
     }
 
 
-}*/
+}
 
-export default{
-    name:"Login",
+export default {
+    name: "Login",
     data() {
         return {
-            email:'',
-            password:''
+            email: '',
+            password: ''
         }
     },
+<<<<<<< HEAD
     methods:{
         login(){
             console.warn( this.email, this.password)
@@ -105,14 +103,18 @@ export default{
             .then(data => {
                 console.log("Now we have to compare ", data.records[0].fields.Password , this.password)
             })
+=======
+    methods: {
+        login() {
+            console.warn(this.email, this.password)
+>>>>>>> 3666883ecd5518da85a460c14829413ec1a411db
         }
     }
 }
 
-
-
 </script>
 
+<<<<<<< HEAD
 <style scoped>
     body{
         background-color: rgb(33, 56, 59);
@@ -154,4 +156,10 @@ export default{
     }
    
    
+=======
+
+<style>
+
+>>>>>>> 3666883ecd5518da85a460c14829413ec1a411db
 </style>
+-->
