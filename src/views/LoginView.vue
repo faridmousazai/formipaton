@@ -35,8 +35,8 @@
     </div>
 </template>
 
-<script>
-/*export default {
+<!--<script>
+export default {
     computed: {
         possibleUsers() {
             return this.tabUsers.filter((user) => user.Role == this.selected)
@@ -73,7 +73,7 @@
     }
 
 
-}*/
+}
 
 export default {
     name: "Login",
@@ -92,27 +92,8 @@ export default {
 
 </script>
 
-}*/
-
-export default{
-    name:"Login",
-    data() {
-        return {
-            email:'',
-            password:''
-        }
-    },
-    methods:{
-        login(){
-            console.warn( this.email, this.password)
-        }
-    }
-}
-
-
-
-</script>
 
 <style>
 
 </style>
+-->
