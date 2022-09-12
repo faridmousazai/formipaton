@@ -62,14 +62,8 @@ export default {
                 password: ""
             },
         }
-    },
-    methods: {
-        Checklogin() {
-            // if (this.input.username != "" && this.input.password != "") {
-
-            // }
-        }
     }
+
 
 
 }
