@@ -38,7 +38,9 @@ export default {
   color: #2c3e50;
 
 }
-
+body{
+  height: 100vh;
+}
 
 nav a {
   font-weight: bold;

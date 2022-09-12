@@ -89,7 +89,7 @@ body {
 }
 .footer{
   background-color: rgb(88, 86, 77);
-  margin-top: 3rem;
+  margin-top: 4rem;
   height: 10vh;
   border: solid black 1px;
 }
