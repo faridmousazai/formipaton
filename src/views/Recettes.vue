@@ -54,7 +54,7 @@ export default {
       recette_has_ingredient: [],
       ingredientNom :"",
       consolelog(ingredientNom)
-   }
+   },
 }     
  
 
