@@ -2,6 +2,7 @@
   <template>
     <div class="main">
        <h1> {{name}} </h1>
+       <h2>{{ $store.getters['recette/test'] }}</h2>
        <div class="recette">
         <div class="image">
        <img src="../assets/images/muffin.jpg" alt="ça à l'air trop bon!">
@@ -46,7 +47,7 @@ export default {
 
       fetch("https://api.airtable.com/v0/appT0bvntx0RS1M8p/Recette_has_Ingredient?maxRecords=3&view=Grid%20view", options)
       .then(data => data.json())
-      .then(data => this.recette_has_ingredient = data.records)
+      .then(data => this.$store.dispatch("recette/load", data))
       
    },
  data() {
