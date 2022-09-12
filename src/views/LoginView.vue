@@ -1,11 +1,15 @@
  
 <template>
-<<<<<<< HEAD
-<body>
-   <h1>Login</h1> 
-=======
+    <body>
+        
+    
     <h1>Login</h1>
->>>>>>> 3666883ecd5518da85a460c14829413ec1a411db
+   <h1>Login</h1> 
+    <h1>Login</h1>
+   <h1>Login</h1> 
+    <h1>Login</h1>
+   <h1>Login</h1> 
+    <h1>Login</h1>
 
     <div class="login">
         <input type="text" v-model="email" placeholder="Enter Your Email">
@@ -80,7 +84,7 @@ export default {
     }
 
 
-}
+}-->
 
 export default {
     name: "Login",
@@ -90,7 +94,6 @@ export default {
             password: ''
         }
     },
-<<<<<<< HEAD
     methods:{
         login(){
             console.warn( this.email, this.password)
@@ -103,18 +106,16 @@ export default {
             .then(data => {
                 console.log("Now we have to compare ", data.records[0].fields.Password , this.password)
             })
-=======
+
     methods: {
         login() {
             console.warn(this.email, this.password)
->>>>>>> 3666883ecd5518da85a460c14829413ec1a411db
         }
     }
 }
 
 </script>
 
-<<<<<<< HEAD
 <style scoped>
     body{
         background-color: rgb(33, 56, 59);
@@ -156,10 +157,5 @@ export default {
     }
    
    
-=======
-
-<style>
-
->>>>>>> 3666883ecd5518da85a460c14829413ec1a411db
 </style>
 -->

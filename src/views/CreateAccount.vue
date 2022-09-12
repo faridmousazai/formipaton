@@ -1,4 +1,5 @@
 <template>
+    <body>
     <h1>Sign UP</h1>
     <div class="signup">
         <input type="text" v-model="name" placeholder="Enter Name">
