@@ -3,10 +3,14 @@ export default {
   state: {
     test: "PATOCHE IS A BIG POTACHE !!",
     recette_has_ingredients: [],
+    recette_en_cours_affichage: {},
   },
   getters: {
     test(state) {
       return state.test;
+    },
+    getRecetteEnCours(state) {
+      return state.recette_en_cours_affichage;
     },
     getRecetteHasIngredientFromId: (state) => (id) => {
       return state.recette_has_ingredients.find((rhi) => rhi.id == id);
@@ -22,8 +26,31 @@ export default {
     load_recette_has_ingredients(state, data) {
       state.recette_has_ingredients = data;
     },
+    setRecetteEnCoursAffichage(state, data) {
+      state.recette_en_cours_affichage = data;
+    },
   },
   actions: {
+    load_recette(ctx) {
+      const options = {
+        headers: new Headers({
+          Authorization: "Bearer " + process.env.VUE_APP_AIRTABLE_APITOKEN,
+        }),
+      };
+      fetch(
+        "https://api.airtable.com/v0/appT0bvntx0RS1M8p/Recette/rectxIKMHXVmxzwyE",
+        options
+      )
+        .then((data) => data.json())
+        .then((data) => {
+          let rct = {
+            description: data.fields.Description,
+            name: data.fields.Name,
+            associations_avec_ingredients: data.fields.Recette_has_Ingredient,
+          };
+          ctx.commit("setRecetteEnCoursAffichage", rct);
+        });
+    },
     load_recette_has_ingredients(context) {
       if (context.state.recette_has_ingredients.length == 0) {
         const options = {
