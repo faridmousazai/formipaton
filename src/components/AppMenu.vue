@@ -17,41 +17,6 @@
       <li><router-link to="/CreateRecette" class="menu__item">Creation Recette</router-link></li>
       <li><router-link to="/DeleteRecette" class="menu__item">Effacer Recette</router-link></li>
       <li><router-link to="/EditRecette" class="menu__item">Modifier Recette</router-link></li>
-      <!--<li class="menu__item">
-        <a class="item" href="#">Recettes</a>
-        <ul class="submenu__box">
-          <li>
-            <a class="submenu__item" href="#"><span class="icon">🍸</span> Aperitifs </a>
-          </li>
-          <li>
-            <a class="submenu__item" href="#"> <span class="icon">🥗</span> Entrees</a>
-          </li>
-          <li>
-            <a class="submenu__item" href="#"><span class="icon">🍝</span> Plats</a>
-          </li>
-          <li>
-            <a class="submenu__item" href="#"><span class="icon">🍨</span> Desserts</a>
-          </li>
-        </ul>
-      </li>
-      <li class="menu__item">
-        <a class="item" href="#">Recettes de saison</a>
-        <ul class="submenu__box">
-          <li>
-            <a class="submenu__item" href="#"><span class="icon">🌷</span> Printemps</a>
-          </li>
-          <li>
-            <a class="submenu__item" href="#"><span class="icon">🏖</span> Eté</a>
-          </li>
-          <li>
-            <a class="submenu__item" href="#"><span class="icon">🍁</span> Automne</a></li>
-          <li>
-            <a class="submenu__item" href="#"><span class="icon">🗻</span> Hiver</a>
-          </li>
-        </ul>
-      </li>
-
-      <li><a class="menu__item" href="#">Recettes par ingredients</a></li>-->
     </ul>
   </div>
    

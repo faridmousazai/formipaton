@@ -1,16 +1,6 @@
- 
-<template>
-    <body>
-        
-    
+ <template>
+    <body> 
     <h1>Login</h1>
-   <h1>Login</h1> 
-    <h1>Login</h1>
-   <h1>Login</h1> 
-    <h1>Login</h1>
-   <h1>Login</h1> 
-    <h1>Login</h1>
-
     <div class="login">
         <input type="text" v-model="email" placeholder="Enter Your Email">
         <input type="password" v-model="password" placeholder="Enter Your Password">
@@ -19,72 +9,12 @@
             <button> <router-link to="/createaccount" class="btn-default">Sign Up</router-link></button>
            
         </p>
-        <!--<body>
-        <span>Users available: {{ possibleUsers }}</span>
-        <select v-model="selected">
-            <option disabled value="">Choisir une categorie</option>
-            <option>Administrateur</option>
-            <option>Editeur</option>
-            <option>Visiteur</option>
-        </select>
-        <ul>
-            <li v-for="user in tabUsers" :key="user">
-                <div>{{ user.name }}</div>
-                <small>{{ user.Role }} @{{ user.mdp }}</small>
-            </li>
-        </ul>
-
-        <input type="text" name="username" v-model="input.username" placeholder="Username" />
-        <br>
-        <br>
-        <input type="password" name="password" v-model="input.password" placeholder="Password" />
-        <br>
-        <br>
-        <button type="button" v-on:click="Checklogin()">Login</button>
-    </body>-->
+       
     </div>
 </body>
 </template>
 
-<!--<script>
-export default {
-    computed: {
-        possibleUsers() {
-            return this.tabUsers.filter((user) => user.Role == this.selected)
-        }
-    },
-    data() {
-        return {
-            selected: '',
-
-
-            tabUsers: [
-                {
-                    name: 'Farid',
-                    Role: 'Administrateur',
-                    mdp: '1234'
-                },
-                {
-                    name: 'Patrice',
-                    Role: 'Editeur',
-                    mdp: '2345'
-                },
-                {
-                    name: 'Michel',
-                    Role: 'Visiteur',
-                    mdp: '3456'
-                },
-            ],
-            name: 'CheckLogin',
-            input: {
-                username: "",
-                password: ""
-            },
-        }
-    }
-
-
-}-->
+<script>
 
 export default {
     name: "Login",
@@ -107,11 +37,9 @@ export default {
                 console.log("Now we have to compare ", data.records[0].fields.Password , this.password)
             })
 
-    methods: {
-        login() {
-            console.warn(this.email, this.password)
-        }
+    
     }
+  }
 }
 
 </script>
@@ -155,7 +83,4 @@ export default {
         color: white;
         text-decoration: none;
     }
-   
-   
 </style>
--->
