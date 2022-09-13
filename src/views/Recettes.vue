@@ -63,10 +63,10 @@ export default {
      text-align: center;
   }
   .tableau{
-  width: 90vw;
-  grid-template-columns: repeat(1, 1fr);
-  display: grid;
-  border: 1px solid black;
+  /*width: 90vw;
+  grid-template-columns: repeat(1, 1fr);*/
+ /* display: grid;
+  border: 1px solid black;*/
   margin: auto;
    }
  

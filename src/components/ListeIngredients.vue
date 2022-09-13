@@ -28,10 +28,5 @@
 </script>
 <style scoped>
     
-  .case{
-   border: 1px solid black;
-   height: 20vh;
-   border-collapse: collapse;
-   width: 33%;
-    }
+ 
 </style>
