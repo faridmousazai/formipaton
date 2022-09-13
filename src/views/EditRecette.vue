@@ -1,6 +1,7 @@
 <template>
-    <div class="about">
-        <h1>This is an Edit Recette page</h1>
+    <div class="main">
+        <h1>Modification recette</h1>
     </div>
+
 </template>
   
