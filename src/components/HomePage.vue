@@ -1,4 +1,5 @@
 <template>
+
   <body>
     <section>
         <h2>FARMIPATON</h2> 
@@ -9,8 +10,8 @@
      </footer>
   
 
-    
-  
+
+
 </template>
 
 <script>
@@ -55,6 +56,7 @@ h2 {
   display: inline-block;
       font-size: 100px;
 }
+
 @keyframes textclip {
   to {
     background-position: 200% center;
@@ -66,7 +68,8 @@ h2 {
   height: 10vh;
   border: solid black 1px;
 }
-.footer h5{
+
+.footer h5 {
   text-align: center;
   font-size: 2rem;
   padding-top: 0.9rem;

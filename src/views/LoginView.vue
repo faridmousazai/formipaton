@@ -45,11 +45,11 @@ export default {
 </script>
 
 <style scoped>
-    body{
-        background-color: rgb(33, 56, 59);
-        background-image: url("https://media.istockphoto.com/illustrations/clean-abstract-background-illustration-id518068814?k=6&m=518068814&s=170667a&w=0&h=SkgQ0sg0zzAe-lAZ30BnZ_LmxnDR5vNozCRv_gsjtNo=");
-        background-repeat: no-repeat;
-        background-size: cover;
+body {
+    background-color: rgb(33, 56, 59);
+    background-image: url("https://media.istockphoto.com/illustrations/clean-abstract-background-illustration-id518068814?k=6&m=518068814&s=170667a&w=0&h=SkgQ0sg0zzAe-lAZ30BnZ_LmxnDR5vNozCRv_gsjtNo=");
+    background-repeat: no-repeat;
+    background-size: cover;
 
     }
     h1{
