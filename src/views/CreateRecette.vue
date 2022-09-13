@@ -1,51 +1,69 @@
 <template>
 
-        <h1>This is an Create Recette page</h1>
-    <form class="add">
-        <input type="text" v-model="nom_recette" placeholder="nom de la recette">
-        <input type="text" v-model="qté_nb_convives" placeholder="qnté nb convives">
-        <input type="text" v-model="unité_de_mesure" placeholder="unité de mesure">
-       
-        <button type="button" v-on:click="addRecipe">Add new recipe</button>
-    </form>
+    <body>
+        <div class="edit">
+            <h1>Creer une recette</h1>
+            <input type="text" v-model="recette" placeholder="Nom de recette"><br>
+            <input type="text" v-model="saison" placeholder="Saison de la recette"><br>
+            <input type="text" v-model="EtapesPrep" placeholder="Etapes de preparation"><br>
+            <input type="text" v-model="ImgRecette" placeholder="Image de la recette"><br>
+            <input type="text" v-model="Ingredients" placeholder="Ingredients de la recette"><br>
+            <button v-on:click="Modifier">Creer</button>
+        </div>
+    </body>
+
+
 </template>
+
 <script>
-  export default{
-    name: 'Add',
+
+export default {
+    name: "Edit",
     data() {
         return {
-            nom_recette:'',
-            qté_nb_convives:'',
-            unité_de_mesure:''
+            recette: '',
+            saison: '',
+            EtapesPrep: '',
+            ImgRecette: '',
         }
-    },
-    methods:{
-     addRecipe(){
-        console.log(this.nom_recette, this.qté_nb_convives, this.unité_de_mesure)
-      }
+    }
+}
 
-    }
-  }
-    
 </script>
+
 <style scoped>
-    .add input{
-        width: 300px;
-        height:40px ;
-        padding-left: 20px;
-        display: block;
-        margin-bottom: 30px;
-        margin-right: auto;
-        margin-left: auto;
-        border: 1px solid skyblue;
-    }
-    .add button{
-        width: 320px;
-        height: 40px;
-        border: 1px solid skyblue;
-        background: skyblue;
-        color:#fff;
-        cursor: pointer;
-    }
+body {
+    background-color: rgb(33, 56, 59);
+    background-image: url("https://th.bing.com/th/id/R.957e2b5db3d35f4290b51b21778ff19b?rik=QfL2uX09bVhDXA&riu=http%3a%2f%2fwww.1zoom.me%2fbig2%2f90%2f323585-Sepik.jpg&ehk=2kqAyR7Y8DW4rqiVyWPUM%2bYrglYy%2bZBVSmI5QuoEPNE%3d&risl=&pid=ImgRaw&r=0");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+h1 {
+    padding: 2rem;
+    color: #fff;
+}
+
+.edit input {
+    width: 320px;
+    height: 40px;
+    padding-left: 20px;
+    display: block;
+    margin-bottom: 5px;
+    margin-right: auto;
+    margin-left: auto;
+    border: 2px solid rgb(193, 210, 96);
+    border-radius: 15px;
+}
+
+.edit button {
+    width: 320px;
+    height: 40px;
+    border: 1px solid rgb(164, 196, 232);
+    background: rgb(53, 57, 56);
+    color: #fff;
+    cursor: pointer;
+    border-radius: 15px;
+}
 </style>
-  
