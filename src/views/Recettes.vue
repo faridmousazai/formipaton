@@ -18,7 +18,7 @@
         <br>
         <br>
       <ListeIngredients :ingredients="recette_en_cours.associations_avec_ingredients" />
-       
+      
       </div>
          
 </template>
@@ -27,13 +27,14 @@
    import ListeIngredients from "@/components/ListeIngredients.vue"
 export default {
    components: {
-      ListeIngredients
+      ListeIngredients,
+      
+
    },
    computed: {
       recette_en_cours() { return this.$store.getters['recette/getRecetteEnCours']},
    },
    created() {
-     
       this.$store.dispatch("recette/load_recette")
       this.$store.dispatch("recette/load_recette_has_ingredients")
       this.$store.dispatch("ingredient/load_ingredient")
@@ -61,14 +62,5 @@ export default {
      width: 30vw;
      text-align: justify;
      text-align: center;
-  }
-  .tableau{
-  /*width: 90vw;
-  grid-template-columns: repeat(1, 1fr);*/
- /* display: grid;
-  border: 1px solid black;*/
-  margin: auto;
-   }
- 
-    
+  }    
 </style>
