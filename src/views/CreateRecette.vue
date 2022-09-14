@@ -3,10 +3,10 @@
     <body>
         <div class="edit">
             <h1>Creer une recette</h1>
-            <input type="text" v-model="recette" placeholder="Nom de recette"><br>
-            <input type="text" v-model="saison" placeholder="Saison de la recette"><br>
-            <input type="text" v-model="EtapesPrep" placeholder="Etapes de preparation"><br>
-            <input type="text" v-model="ImgRecette" placeholder="Image de la recette"><br>
+            <input type="text" v-model="recette" placeholder="Nom de recette">
+            <input type="text" v-model="saison" placeholder="Saison de la recette">
+            <input type="text" v-model="EtapesPrep" placeholder="Etapes de preparation">
+            <input type="text" v-model="ImgRecette" placeholder="Image de la recette">
             <input type="text" v-model="Ingredients" placeholder="Ingredients de la recette"><br>
             <button v-on:click="Modifier">Creer</button>
         </div>
@@ -50,18 +50,20 @@ h1 {
     height: 40px;
     padding-left: 20px;
     display: block;
-    margin-bottom: 5px;
+    margin-bottom: 0px;
     margin-right: auto;
     margin-left: auto;
     border: 2px solid rgb(193, 210, 96);
     border-radius: 15px;
+    background: rgb(122, 48, 97);
+    color: #fff;
 }
 
 .edit button {
     width: 320px;
     height: 40px;
     border: 1px solid rgb(164, 196, 232);
-    background: rgb(53, 57, 56);
+    background: rgb(51, 40, 17);
     color: #fff;
     cursor: pointer;
     border-radius: 15px;

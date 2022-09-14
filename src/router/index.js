@@ -7,9 +7,8 @@ import PreparationRecette from "../views/PreparationRecette.vue";
 import CreateRecette from "../views/CreateRecette.vue";
 import DeleteRecette from "../views/DeleteRecette.vue";
 import EditRecette from "../views/EditRecette.vue";
-
-
-
+import AcceuilAdmin from "../views/AcceuilAdmin.vue"
+import AcceuilEditor from "../views/AcceuilEditor.vue"
 
 const routes = [
   {
@@ -17,6 +16,7 @@ const routes = [
     name: "home",
     component: HomeView,
   },
+
   {
     path: "/login",
     name: "login",
@@ -52,8 +52,16 @@ const routes = [
     name: "EditRecette",
     component: EditRecette,
   },
-
-
+  {
+    path: "/acceuiladmin",
+    name: "AcceuilAdmin",
+    component: AcceuilAdmin,
+  },
+  {
+    path: "/acceuileditor",
+    name: "AcceuilEditor",
+    component: AcceuilEditor,
+  },
 ];
 
 const router = createRouter({
