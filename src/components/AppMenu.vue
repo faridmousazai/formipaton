@@ -36,11 +36,9 @@
           logout() {
             console.log("I want to break free")
             // ...
-        
-           this.$router.push('/')
+            this.$router.push('/')
           }
-          }
-        
+        }
     }
 </script>
 <style scoped>
