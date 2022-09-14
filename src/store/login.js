@@ -20,9 +20,6 @@ export default {
       set_connected_user(state, user) {
         state.connected_user = user
       },
-      set_deleted_user(state, user) {
-        state.deleted_user = user
-      }
     },
     actions: {
       load_login(context) {

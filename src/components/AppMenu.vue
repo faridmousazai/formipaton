@@ -23,7 +23,6 @@
 
 </template>
 <script>
-<<<<<<< HEAD
     export default {
         name: "AppMenu",
         computed: {
@@ -32,17 +31,9 @@
         methods: {
           logout() {
             console.log("I want to break free")
-            // clean the connected_user variable in the store
-
           }
-
         }
     }
-=======
-export default {
-  name: "AppMenu"
-}
->>>>>>> 624486dc4313a7f43769d261bdf8da10d8375cdf
 </script>
 <style scoped>
 #menu__toggle:checked+.menu__btn>span::after {
@@ -53,7 +44,6 @@ export default {
 #menu__toggle:checked~.menu__box {
   left: 0 !important;
 }
-
 .menu__btn {
   position: absolute;
   top: 20px;
@@ -99,7 +89,6 @@ export default {
   box-shadow: 2px 2px 6px rgba(197, 214, 211, 0.4);
   transition-duration: .25s;
 }
-
 .menu__item {
   display: block;
   padding: 12px 24px;
@@ -110,7 +99,6 @@ export default {
   text-decoration: none;
   transition-duration: .25s;
 }
-
 .menu__item:hover {
   background-color: rgb(192, 205, 204);
 }
