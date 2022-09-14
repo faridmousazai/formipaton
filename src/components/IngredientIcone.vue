@@ -1,5 +1,7 @@
 <template>
-    <div>{{images}}</div>
+    <div>
+        <img :src="images?.fields.url" />
+    </div>
 </template>
 <script>
 export default{
@@ -13,6 +15,8 @@ export default{
     }
 }
 </script>
-<style>
-
+<style scoped>
+    img{
+        width: 64px;
+    }
 </style>

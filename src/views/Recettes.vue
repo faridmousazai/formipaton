@@ -17,6 +17,7 @@
         <br>
         <br>
         <br>
+     
       <ListeIngredients :ingredients="recette_en_cours.associations_avec_ingredients" />
       
       </div>
