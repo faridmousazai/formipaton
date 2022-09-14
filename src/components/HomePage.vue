@@ -6,7 +6,8 @@
     </section>
   </body>
   <footer class="footer">
-    <h5>Mentions légales</h5>
+    <p>Mentions légales</p>
+    <p>Contactez nous</p>
   </footer>
 
 
