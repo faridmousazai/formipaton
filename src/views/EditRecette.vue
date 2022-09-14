@@ -3,10 +3,10 @@
     <body>
         <div class="edit">
             <h1>Modification recette</h1>
-            <input type="text" v-model="recette" placeholder="Recette a modifier"><br>
-            <input type="text" v-model="saison" placeholder="Modifier saison"><br>
-            <input type="text" v-model="EtapesPrep" placeholder="Modifier les etapes de preparation"><br>
-            <input type="text" v-model="ImgRecette" placeholder="Modifier l'image"><br>
+            <input type="text" v-model="recette" placeholder="Recette a modifier">
+            <input type="text" v-model="saison" placeholder="Modifier saison">
+            <input type="text" v-model="EtapesPrep" placeholder="Modifier les etapes de preparation">
+            <input type="text" v-model="ImgRecette" placeholder="Modifier l'image">
             <input type="text" v-model="Ingredients" placeholder="Modifier les ingredients"><br>
             <button v-on:click="Modifier">Modifier</button>
         </div>
@@ -18,7 +18,7 @@
 <script>
 
 export default {
-    name: "Edit",
+    name: "edit",
     data() {
         return {
             recette: '',
@@ -26,7 +26,10 @@ export default {
             EtapesPrep: '',
             ImgRecette: '',
         }
-    }
+    },
+
+
+
 }
 
 </script>
@@ -55,13 +58,15 @@ h1 {
     margin-left: auto;
     border: 2px solid rgb(193, 210, 96);
     border-radius: 15px;
+    background: rgb(122, 99, 48);
+    color: #fff;
 }
 
 .edit button {
     width: 320px;
     height: 40px;
-    border: 1px solid rgb(164, 196, 232);
-    background: rgb(53, 57, 56);
+    border: 1px solid rgb(232, 191, 164);
+    background: rgb(51, 40, 17);
     color: #fff;
     cursor: pointer;
     border-radius: 15px;
