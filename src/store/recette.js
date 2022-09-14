@@ -1,14 +1,10 @@
 export default {
   namespaced: true,
   state: {
-    test: "PATOCHE IS A BIG POTACHE !!",
     recette_has_ingredients: [],
     recette_en_cours_affichage: {},
   },
   getters: {
-    test(state) {
-      return state.test;
-    },
     getRecetteEnCours(state) {
       return state.recette_en_cours_affichage;
     },

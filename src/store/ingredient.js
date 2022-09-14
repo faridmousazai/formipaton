@@ -1,13 +1,9 @@
 export default {
   namespaced: true,
   state: {
-    test: "PATOCHE IS A BIG POTACHE !!",
     ingredient: [],
   },
   getters: {
-    test(state) {
-      return state.test;
-    },
     getIngredientFromId: (state) => (id) => {
       return state.ingredient.find((rhi) => rhi.id == id);
     },
