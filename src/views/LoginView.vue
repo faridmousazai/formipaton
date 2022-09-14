@@ -34,7 +34,11 @@ export default {
             fetch('https://api.airtable.com/v0/appT0bvntx0RS1M8p/Utilisateur?filterByFormula=FIND("'+this.email+'", {Email})', options).
             then(data => data.json())
             .then(data => {
-                console.log("Now we have to compare ", data.records[0].fields.Password , this.password)
+                console.log(data.records)
+                console.log("Now we have to compare", data.records[0].fields.Password , this.password)
+                if(this.password == data.records[0].fields.Password ) {
+                    this.$store.commit('login/set_connected_user', this.email)
+                }
             })
 
     

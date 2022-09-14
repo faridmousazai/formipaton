@@ -10,13 +10,17 @@
 
       <li><router-link to="/" class="menu__item">Home</router-link></li>
       <li><router-link to="/createaccount" class="menu__item">Creer un Account</router-link></li>
-      <li><router-link to="/login" class="menu__item">Login</router-link></li>
-      
+      <li v-if="!user_is_connected"><router-link to="/login" class="menu__item">Login</router-link></li>
 
       <li><router-link to="/Recettes" class="menu__item">Recettes</router-link></li>
-      <li><router-link to="/CreateRecette" class="menu__item">Creation Recette</router-link></li>
-      <li><router-link to="/DeleteRecette" class="menu__item">Effacer Recette</router-link></li>
-      <li><router-link to="/EditRecette" class="menu__item">Modifier Recette</router-link></li>
+
+      <li v-if="user_is_connected"><router-link to="/CreateRecette" class="menu__item" >Creation Recette</router-link></li>
+
+      <li v-if="user_is_connected"><router-link to="/DeleteRecette" class="menu__item">Effacer Recette</router-link></li>
+
+      <li v-if="user_is_connected"><router-link to="/EditRecette" class="menu__item">Modifier Recette</router-link></li>
+
+      <li v-if="user_is_connected" @click="logout"><span class="menu__item">Logout</span></li>
     </ul>
   </div>
    
@@ -24,7 +28,18 @@
 </template>
 <script>
     export default {
-        name: "AppMenu"
+        name: "AppMenu",
+        computed: {
+          user_is_connected() { return this.$store.getters['login/connected_user']}
+        },
+        methods: {
+          logout() {
+            console.log("I want to break free")
+            // clean the connected_user variable in the store
+
+          }
+
+        }
     }
 </script>
 <style scoped>

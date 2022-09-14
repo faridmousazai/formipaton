@@ -6,7 +6,10 @@
     </section>
   </body>
   <footer class="footer">
-    <h5>Montion legales</h5>
+    
+    <p>Montion legales</p>
+      <p>Contactez Nous</p>
+    
      </footer>
   
 
@@ -62,16 +65,20 @@ h2 {
     background-position: 200% center;
   }
 }  
+
 .footer{
   background-color: rgb(88, 86, 77);
-  
   height: 10vh;
   border: solid black 1px;
+  display: flex;
+  justify-content: space-around;
+  
 }
 
-.footer h5 {
+.footer p{
   text-align: center;
   font-size: 2rem;
-  padding-top: 0.9rem;
-}
+  padding-top: 1rem;
+} 
+
 </style>
