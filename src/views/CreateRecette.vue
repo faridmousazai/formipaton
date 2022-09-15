@@ -33,7 +33,7 @@ export default {
 
 <style scoped>
 body {
-    background-color: rgb(33, 56, 59);
+
     background-image: url("https://th.bing.com/th/id/R.957e2b5db3d35f4290b51b21778ff19b?rik=QfL2uX09bVhDXA&riu=http%3a%2f%2fwww.1zoom.me%2fbig2%2f90%2f323585-Sepik.jpg&ehk=2kqAyR7Y8DW4rqiVyWPUM%2bYrglYy%2bZBVSmI5QuoEPNE%3d&risl=&pid=ImgRaw&r=0");
     background-repeat: no-repeat;
     background-size: cover;

@@ -11,7 +11,7 @@
                 <button>
                     <router-link to="/editrecette" class="btn-default">Modifier une Recette</router-link>
                 </button>
-            </p>>
+            </p>
         </div>
     </body>
 </template>
@@ -23,7 +23,7 @@
 
 <style scoped>
 body {
-    background-color: rgb(33, 56, 59);
+
     background-image: url("https://th.bing.com/th/id/OIP.nUSsTa_pPTgDx4iHpMTKEQHaEo?pid=ImgDet&rs=1");
     background-repeat: no-repeat;
     background-size: cover;

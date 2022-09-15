@@ -12,22 +12,32 @@
 </template>
 
 <script>
-/*import EffacerRecette from "@/components/EffacerRecette.vue"
-export default {
-    name: "delete",
-    data() {
-        return {
-            recette: '',
-            EffacerRecette: '',
-        }
-    }
-}*/
+
+/*const tabNomRecette = ["oeufs mimolette", "omelette", "salade ceasar", " oeufs brouillés", "flan aux oeufs"];
+
+let recetteAEffacer = recette;
+let longTab = tabNomRecette.length;
+let tabTri = tabNomRecette.sort();
+let i = 0;
+
+for (i = 0; i <= longTab; i = i + 1) {
+
+    if (tabTri(i) = recetteAEffacer)
+
+};*/
+
+
+
+
+
+
+
 
 </script>
 
 <style scoped>
 body {
-    background-color: rgb(33, 56, 59);
+
     background-image: url("https://s1.1zoom.me/b5050/759/Fruit_Vegetables_Tomatoes_Pepper_Grapes_Onion_512572_3840x2400.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -49,6 +59,8 @@ h1 {
     margin-left: auto;
     border: 2px solid rgb(193, 210, 96);
     border-radius: 15px;
+    background: rgb(53, 57, 56);
+    color: #fff;
 }
 
 .delete button {

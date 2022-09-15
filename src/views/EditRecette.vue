@@ -36,7 +36,7 @@ export default {
 
 <style scoped>
 body {
-    background-color: rgb(33, 56, 59);
+
     background-image: url("https://s1.1zoom.me/big0/115/Still-life_Pepper_Tomatoes_Bottle_Cutting_board_524518_1280x839.jpg");
     background-repeat: no-repeat;
     background-size: cover;
