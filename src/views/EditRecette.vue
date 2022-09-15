@@ -58,7 +58,7 @@ h1 {
     margin-left: auto;
     border: 2px solid rgb(193, 210, 96);
     border-radius: 15px;
-    background: rgb(122, 99, 48);
+    background: rgb(53, 57, 56);
     color: #fff;
 }
 
@@ -66,7 +66,7 @@ h1 {
     width: 320px;
     height: 40px;
     border: 1px solid rgb(232, 191, 164);
-    background: rgb(51, 40, 17);
+    background: rgb(53, 57, 56);
     color: #fff;
     cursor: pointer;
     border-radius: 15px;

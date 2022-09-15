@@ -15,7 +15,7 @@
                 <button>
                     <router-link to="/deleterecette" class="btn-default">Supprimer une Recette</router-link>
                 </button>
-            </p>>
+            </p>
         </div>
     </body>
 </template>
@@ -27,7 +27,7 @@
 
 <style scoped>
 body {
-    background-color: rgb(33, 56, 59);
+    background-color: rgb(45, 165, 180);
     background-image: url("https://th.bing.com/th/id/R.4b1da7597947c5af5ac8513ff85e0261?rik=4lJt0fCU3LOUCg&riu=http%3a%2f%2fwww.pixelstalk.net%2fwp-content%2fuploads%2f2016%2f08%2fDesktop-Free-Food-Images.jpg&ehk=vnKLuTdnGDqI9o%2fSrbwZq2lLzmT6BIz96eVCTNcGUOs%3d&risl=&pid=ImgRaw&r=0");
     background-repeat: no-repeat;
     background-size: cover;

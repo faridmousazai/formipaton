@@ -4,7 +4,7 @@
         <div class="delete">
             <h1>Effacer recette</h1>
             <input type="text" v-model="recette" placeholder="Recette a effacer"><br>
-            <button v-on:click="EffacerRecette">Effacer la Recette</button>
+            <button v-on:click="EffacerRecette">Supprimer</button>
         </div>
     </body>
 
