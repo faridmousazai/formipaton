@@ -4,35 +4,47 @@
         <div class="delete">
             <h1>Effacer recette</h1>
             <input type="text" v-model="recette" placeholder="Recette a effacer"><br>
-            <button v-on:click="EffacerRecette">Supprimer</button>
+
+            <button v-on:click="effacerRecette">Supprimer</button>
         </div>
+
     </body>
 
 
 </template>
-
+            
 <script>
 
-/*const tabNomRecette = ["oeufs mimolette", "omelette", "salade ceasar", " oeufs brouillés", "flan aux oeufs"];
+/*const tabNomRecette = ["oeufs", "omelette", "salade", "pomme", "flan"];
+const recetteAEffacer = recette;
+const longTab = tabNomRecette.length;*/
+const recette = '';
 
-let recetteAEffacer = recette;
-let longTab = tabNomRecette.length;
-let tabTri = tabNomRecette.sort();
-let i = 0;
+export default {
+    name: "EffacerRecette",
+    data() {
+        return {
+            recette: '',
+        }
+    },
+    /* props: {
+         recette: { type: String }
+     },*/
 
-for (i = 0; i <= longTab; i = i + 1) {
+    methods: {
 
-    if (tabTri(i) = recetteAEffacer)
+        effacerRecette() {
+            console.log(recette);
+            /*for (let i = 0; i <= longTab; i = i + 1) {
 
-};*/
-
-
-
-
-
-
-
-
+                if (tabNomRecette[i] == recetteAEffacer) {
+                    tabNomRecette.splice(i, 1);
+                    return ' Recette Supprimée'
+                }
+            }*/
+        }
+    }
+} 
 </script>
 
 <style scoped>
@@ -73,4 +85,3 @@ h1 {
     border-radius: 15px;
 }
 </style>
-  
