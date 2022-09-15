@@ -2,7 +2,7 @@ export default {
     namespaced: true,
     state: {
       login: [],
-      connected_user: "azertyui"
+      connected_user: "azertyui",
     },
     getters: {
       

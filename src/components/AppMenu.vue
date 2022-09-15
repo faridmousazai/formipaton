@@ -43,10 +43,8 @@ export default {
   },
   methods: {
     logout() {
-      console.log("I want to break free")
-      // ...
-
-      this.$router.push('/')
+      this.$store.commit('login/set_connected_user', undefined)
+            this.$router.push("/")
     }
   }
 

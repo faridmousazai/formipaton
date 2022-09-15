@@ -46,7 +46,7 @@ h2 {
   background-size: 200% auto;
   color: #fff;
   background-clip: text;
-  text-fill-color: transparent;
+  scrollbar-color: transparent;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: textclip 2s linear infinite;
