@@ -4,6 +4,7 @@ import ingredient from "./ingredient";
 import image from "./image";
 import createaccount from "./createaccount";
 import login from "./login";
+import etape from "./etape";
 export default createStore({
   state: {},
   getters: {},
@@ -15,5 +16,6 @@ export default createStore({
     image,
     createaccount,
     login,
+    etape,
   },
 });

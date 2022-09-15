@@ -40,6 +40,7 @@ export default {
         .then((data) => data.json())
         .then((data) => {
           let rct = {
+            etape: data.fields.Etape,
             description: data.fields.Description,
             name: data.fields.Name,
             associations_avec_ingredients: data.fields.Recette_has_Ingredient,

@@ -30,7 +30,6 @@ export default {
         fetch("https://api.airtable.com/v0/appT0bvntx0RS1M8p/Image", options)
           .then((data) => data.json())
           .then((data) => {
-            console.log(data.records);
             context.commit("load_image_ingredient", data.records);
           });
       }

@@ -17,8 +17,11 @@
         <br>
         <br>
         <br>
+        <h2>Ingredients</h2>
      
       <ListeIngredients :ingredients="recette_en_cours.associations_avec_ingredients" />
+      <h2>Etapes</h2>
+     <ListeEtapes :etapes="recette_en_cours.etape"/>
       
       </div>
          
@@ -26,12 +29,12 @@
 
 <script>
    import ListeIngredients from "@/components/ListeIngredients.vue"
+import ListeEtapes from "../components/ListeEtapes.vue"
 export default {
    components: {
-      ListeIngredients,
-      
-
-   },
+    ListeIngredients,
+    ListeEtapes
+},
    computed: {
       recette_en_cours() { return this.$store.getters['recette/getRecetteEnCours']},
    },
@@ -39,12 +42,14 @@ export default {
       this.$store.dispatch("recette/load_recette")
       this.$store.dispatch("recette/load_recette_has_ingredients")
       this.$store.dispatch("ingredient/load_ingredient")
+      this.$store.dispatch("etape/load_etape")
      
    },
  data() {
    return {
       recette_has_ingredient: [],
       ingredientNom :"",
+     
 }
 }   
 } 
