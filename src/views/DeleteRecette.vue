@@ -47,6 +47,10 @@ export default {
 </script>
 
 <style scoped>
+/*carracteristiques style du corps de la page : image de fond d'eccran
+ - pas de repetition de l'image
+ - affichage plein ecran
+*/
 body {
 
     background-image: url("https://th.bing.com/th/id/R.b647661d069a017fd45f993c4ac3a41d?rik=oHxaBETNB5f24g&riu=http%3a%2f%2fgetwallpapers.com%2fwallpaper%2ffull%2f6%2f0%2fc%2f580326.jpg&ehk=%2bRZ6%2fuwwRx%2byUlQYwKvXcpeFK0ZOn%2foccsy5dPtJ4gw%3d&risl=&pid=ImgRaw&r=0");
@@ -55,6 +59,16 @@ body {
 
 }
 
+/*
+carracteristiques style du champ titre h2 de la page : 
+        - texte centre, 
+        - taille de police, 
+        - couleur du texte, 
+        - affichage de bloc les uns apres les autres verticalement,
+        - espacement autour du bloc,
+        - espacement en haut du bloc
+
+        */
 
 .delete input {
     width: 320px;
@@ -70,6 +84,7 @@ body {
     color: #fff;
 }
 
+/* carracteristique style de la classe delete-button*/
 .delete button {
     width: 320px;
     height: 40px;
@@ -80,6 +95,7 @@ body {
     border-radius: 15px;
 }
 
+/* carracteristique style ddu titre h2*/
 .delete h2 {
     text-align: center;
     font-size: 50px;
