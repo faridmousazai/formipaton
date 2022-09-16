@@ -123,3 +123,14 @@ acces au formulaire de saisie des champs de la recette a modifier:
 9 - Page Supprimer une recette :
 
 acces au nom de la recette a supprimer
+
+
+
+commentaires :
+
+copie de mon token pour la base API
+
+demarrer le projet vue par npm run serve
+
+installer les dependances par npm install
+
