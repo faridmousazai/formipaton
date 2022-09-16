@@ -3,7 +3,7 @@
     <body>
         <div class="delete">
             <h1>Effacer recette</h1>
-            <input type="text" v-model="recette" placeholder="Recette a effacer"><br>
+            <input type="text" v-model="recette" placeholder="Recette a effacer" /><br>
 
             <button v-on:click="effacerRecette">Supprimer</button>
         </div>
@@ -15,10 +15,10 @@
             
 <script>
 
-/*const tabNomRecette = ["oeufs", "omelette", "salade", "pomme", "flan"];
-const recetteAEffacer = recette;
-const longTab = tabNomRecette.length;*/
-const recette = '';
+const tabNomRecette = ["oeufs", "omelette", "salade", "pomme", "flan"];
+
+const longTab = tabNomRecette.length;
+
 
 export default {
     name: "EffacerRecette",
@@ -27,21 +27,22 @@ export default {
             recette: '',
         }
     },
-    /* props: {
-         recette: { type: String }
-     },*/
+
 
     methods: {
 
         effacerRecette() {
-            console.log(recette);
-            /*for (let i = 0; i <= longTab; i = i + 1) {
+            console.log(this.recette);
+            alert(this.recette + ' est supprimée')
 
-                if (tabNomRecette[i] == recetteAEffacer) {
-                    tabNomRecette.splice(i, 1);
+            for (let i = 0; i <= longTab; i = i + 1) {
+
+                if (this.tabNomRecette[i] == this.recette) {
+                    this.tabNomRecette.splice(i, 1);
                     return ' Recette Supprimée'
+
                 }
-            }*/
+            }
         }
     }
 } 
