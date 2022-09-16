@@ -47,7 +47,7 @@ h2 {
 .acceuil {
     padding-top: 100px;
 }
-
+/*For Mobile*/
 @media (max-width: 600px) {
     .acceuil {
         padding-top: 50px;

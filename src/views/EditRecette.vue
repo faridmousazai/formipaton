@@ -36,7 +36,7 @@ export default {
 <style scoped>
 body {
 
-    background-image: url("https://www.pixelstalk.net/wp-content/uploads/2016/08/Best-Food-HD-Backgrounds.jpg");
+    background-image: url("https://www.pureeatingway.com/wp-content/uploads/2020/09/banner.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -45,7 +45,7 @@ body {
 .edit h2 {
     text-align: center;
     font-size: 50px;
-    color: rgb(20, 18, 18);
+    color: rgb(235, 228, 228);
     display: block;
     padding: 30px 0;
 }
@@ -60,7 +60,7 @@ body {
     margin-bottom: 5px;
     margin-right: auto;
     margin-left: auto;
-    border: 2px solid rgb(193, 210, 96);
+    border: 2px solid rgb(200, 163, 114);
     border-radius: 15px;
     background: rgb(53, 57, 56);
     color: #fff;
@@ -75,7 +75,7 @@ body {
     cursor: pointer;
     border-radius: 15px;
 }
-
+/*For mobile*/
 @media (max-width: 600px) {
     .edit input {
         width: 400px;

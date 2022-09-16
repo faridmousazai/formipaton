@@ -93,7 +93,7 @@ body {
         color: white;
         text-decoration: none;
     }
-
+/*For mobile*/
     @media (max-width: 600px) {
         .login {
             padding-bottom: 30px;

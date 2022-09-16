@@ -43,12 +43,12 @@ form#search {
         color: #ffffff;
       }
       header{
-        background-color: #373b3d;
+        background-color: #4f5456;
         margin-top: 0;
         height: 10vh;
       }
 
-
+/*For mobile*/
       @media (max-width: 600px) {
         header form {
           width: 330px;
@@ -56,7 +56,7 @@ form#search {
           padding-right: 20px;
         }
       }
-
+/*For Computer*/
       @media (max-width: 1400px) {
         header form {
           width: 330px;

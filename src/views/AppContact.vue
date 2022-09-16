@@ -22,7 +22,9 @@
 <style scoped>
 
 body{
-    background-color: rgb(129, 126, 121);
+    background-image: url("https://th.bing.com/th/id/R.92ba26140c607eeebdad87be763e9a93?rik=DjKiXHK80XHeTQ&riu=http%3a%2f%2fwww.mindworks.cc%2fwp%2fwp-content%2fuploads%2f2016%2f10%2f25710867414_9a3d2acfcf_b.jpg&ehk=xikW%2bodh%2bfqZ6A%2f%2bMK297uJN1izKebfjdOxDNMhf3IQ%3d&risl=&pid=ImgRaw&r=0");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
     h2{
         color: #fff;
@@ -33,7 +35,7 @@ body{
     margin-left: 0;
    } 
 .contact input {
-    width: 320px;
+    width: 370px;
     height: 40px;
     padding-left: 20px;
     display: block;
@@ -45,22 +47,23 @@ body{
 }
 
 .contact button {
-    width: 320px;
+    width: 370px;
     height: 40px;
     border: 1px solid skyblue;
-    background: rgb(88, 108, 115);
+    background: rgb(47, 51, 53);
     color: #fff;
     cursor: pointer;
     border-radius: 15px;
 }
  #msg{
     border: 1px solid skyblue;
-    background: rgb(239, 243, 244);
+    background: rgb(145, 151, 154);
     color: rgb(28, 24, 24);
     cursor: pointer;
     border-radius: 15px;
     height: 150px;
-    width: 320px;
+    width: 370px;
+    
  }
  .contact textarea{
     text-align: center;

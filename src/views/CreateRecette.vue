@@ -36,7 +36,7 @@ export default {
 <style scoped>
 body {
 
-    background-image: url("https://i0.wp.com/bitebymichelle.com/wp-content/uploads/2016/07/A-IMG_3717.jpg?w=960");
+    background-image: url("https://www.tandoorihaveli.com/wp-content/uploads/2020/03/homepage-banner2-1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -45,7 +45,7 @@ body {
 h2 {
     text-align: center;
     font-size: 50px;
-    color: rgb(46, 40, 40);
+    color: rgb(223, 214, 214);
     display: block;
     padding: 30px 0;
     padding-top: 70px;
@@ -59,7 +59,7 @@ h2 {
     /*backdrop-filter: blur(3px);
     border: 1px solid #fff;*/
 }
-
+/*For mobile*/
 @media (max-width: 600px) {
     .edit .glass {
         width: 100%;
@@ -70,7 +70,7 @@ h2 {
         padding-top: 50px;
     }
 }
-
+/*For Computer*/
 @media (max-width: 1200px) {
     .edit h2 {
         padding-top: 50px;
@@ -91,9 +91,9 @@ h2 {
     margin-bottom: 10px;
     margin-right: auto;
     margin-left: auto;
-    border: 2px solid rgb(193, 210, 96);
+    border: 2px solid rgb(246, 243, 238);
     border-radius: 15px;
-    background: rgb(47, 48, 48);
+    background: rgb(65, 67, 67);
     color: #fff;
 }
 
@@ -107,7 +107,7 @@ h2 {
     border-radius: 15px;
 }
 
-.edit h1 {
+.edit h2 {
     text-align: center;
     margin-left: 0 !important;
 }

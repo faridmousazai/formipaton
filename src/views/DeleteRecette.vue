@@ -49,7 +49,7 @@ export default {
 <style scoped>
 body {
 
-    background-image: url("https://www.manfrottoimaginemore.com/site/uploads/2014/03/Tavola-di-primavera-51-per-Manfrotto-768x509.jpg");
+    background-image: url("https://th.bing.com/th/id/R.b647661d069a017fd45f993c4ac3a41d?rik=oHxaBETNB5f24g&riu=http%3a%2f%2fgetwallpapers.com%2fwallpaper%2ffull%2f6%2f0%2fc%2f580326.jpg&ehk=%2bRZ6%2fuwwRx%2byUlQYwKvXcpeFK0ZOn%2foccsy5dPtJ4gw%3d&risl=&pid=ImgRaw&r=0");
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -83,14 +83,21 @@ body {
 .delete h2 {
     text-align: center;
     font-size: 50px;
-    color: rgb(3, 3, 3);
+    color: rgb(202, 195, 195);
     display: block;
     padding: 30px 0;
     padding-top: 150px;
 }
 
+/*For mobile*/
+@media (max-width: 600px) {
+    .delete h2 {
+        font-size: 30px;
+        padding-top: 50px;
+    }
+}
 
-
+/*For Computer*/
 @media (max-width: 1200px) {
     .delete h2 {
         font-size: 30px;
@@ -98,10 +105,5 @@ body {
     }
 }
 
-@media (max-width: 600px) {
-    .delete h2 {
-        font-size: 30px;
-        padding-top: 50px;
-    }
-}
+
 </style>

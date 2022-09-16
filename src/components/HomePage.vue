@@ -54,7 +54,7 @@ h2 {
     background-position: 200% center;
   }
 }  
-
+/*For mobile*/
 @media (max-width: 480px) {
   h2 {
     font-size: 30px;
