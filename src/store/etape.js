@@ -10,7 +10,6 @@ export default {
   },
   mutations: {
     load_etape(state, data) {
-      console.log(data);
       state.etapes = data;
     },
   },
