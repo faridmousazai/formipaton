@@ -36,7 +36,7 @@ export default {
 <style scoped>
 body {
 
-    background-image: url("https://th.bing.com/th/id/R.957e2b5db3d35f4290b51b21778ff19b?rik=QfL2uX09bVhDXA&riu=http%3a%2f%2fwww.1zoom.me%2fbig2%2f90%2f323585-Sepik.jpg&ehk=2kqAyR7Y8DW4rqiVyWPUM%2bYrglYy%2bZBVSmI5QuoEPNE%3d&risl=&pid=ImgRaw&r=0");
+    background-image: url("https://i0.wp.com/bitebymichelle.com/wp-content/uploads/2016/07/A-IMG_3717.jpg?w=960");
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -45,10 +45,10 @@ body {
 h2 {
     text-align: center;
     font-size: 50px;
-    color: #fff;
-   display: block;
-   padding: 30px 0;
-   padding-top: 70px;
+    color: rgb(46, 40, 40);
+    display: block;
+    padding: 30px 0;
+    padding-top: 70px;
 }
 
 .edit .glass {
@@ -75,12 +75,14 @@ h2 {
     .edit h2 {
         padding-top: 50px;
     }
+
     .edit .glass {
         width: 100%;
         margin-top: -40px;
     }
 
 }
+
 .edit input {
     width: 320px;
     height: 40px;

@@ -28,7 +28,7 @@
 <style scoped>
 body {
 
-    background-image: url("https://th.bing.com/th/id/R.4b1da7597947c5af5ac8513ff85e0261?rik=4lJt0fCU3LOUCg&riu=http%3a%2f%2fwww.pixelstalk.net%2fwp-content%2fuploads%2f2016%2f08%2fDesktop-Free-Food-Images.jpg&ehk=vnKLuTdnGDqI9o%2fSrbwZq2lLzmT6BIz96eVCTNcGUOs%3d&risl=&pid=ImgRaw&r=0");
+    background-image: url("https://th.bing.com/th/id/R.0517de92406c1fda6395b916b6c490e7?rik=ANW0QF1m6ZbxFw&pid=ImgRaw&r=0");
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -38,9 +38,9 @@ h2 {
     text-align: center;
     font-size: 50px;
     color: #fff;
-   display: block;
-   padding: 30px 0;
-   padding-top: 70px;
+    display: block;
+    padding: 30px 0;
+    padding-top: 70px;
 }
 
 .acceuil {
@@ -51,7 +51,8 @@ h2 {
     .acceuil {
         padding-top: 50px;
     }
-    h2{
+
+    h2 {
         font-size: 30px;
     }
 }

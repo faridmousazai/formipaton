@@ -37,7 +37,7 @@ export default {
 <style scoped>
 body {
 
-    background-image: url("https://s1.1zoom.me/big0/115/Still-life_Pepper_Tomatoes_Bottle_Cutting_board_524518_1280x839.jpg");
+    background-image: url("https://www.pixelstalk.net/wp-content/uploads/2016/08/Best-Food-HD-Backgrounds.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -46,9 +46,9 @@ body {
 .edit h2 {
     text-align: center;
     font-size: 50px;
-    color: #fff;
-   display: block;
-   padding: 30px 0;
+    color: rgb(20, 18, 18);
+    display: block;
+    padding: 30px 0;
 }
 
 
@@ -90,6 +90,4 @@ body {
         font-size: 30px;
     }
 }
-
-
 </style>

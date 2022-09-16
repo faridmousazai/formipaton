@@ -51,7 +51,7 @@ export default {
 <style scoped>
 body {
 
-    background-image: url("https://s1.1zoom.me/b5050/759/Fruit_Vegetables_Tomatoes_Pepper_Grapes_Onion_512572_3840x2400.jpg");
+    background-image: url("https://www.manfrottoimaginemore.com/site/uploads/2014/03/Tavola-di-primavera-51-per-Manfrotto-768x509.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -85,7 +85,7 @@ body {
 .delete h2 {
     text-align: center;
     font-size: 50px;
-    color: #fff;
+    color: rgb(3, 3, 3);
     display: block;
     padding: 30px 0;
     padding-top: 150px;
