@@ -1,11 +1,11 @@
 <template>
  <header>
         
-            <form action="/form/submit" method="GET">
+            <form action="/form/submit" method="GET" id="search">
               <input type="text" name="text" class="search" placeholder="Search here!">
               <input type="submit" name="submit" class="submit" value="Search">
             </form>
-        
+       
 </header>
 </template>
 <script>
@@ -14,20 +14,25 @@ export default{
 }
 </script>
 <style csoped>
-form {
-        width: 400px;
-        margin: auto;
+h1{
+  color: #cae4ee;
+  margin-left: 250px;
+  padding-top: 1rem;
+}
+form#search {
+      width: 400px;
+       float: right;
        padding-bottom: 1rem;
        
         
       }
-      input {
+      #search input {
         padding: 4px 10px;
         font-size: 16px;
-        border: solid black 1px;
-        background-color: #cae4ee;
-        border-radius:10px;
-        margin-top: 10px;
+        border: 0;
+        outline: 1px solid #fff;
+        background-color: transparent;
+        margin-top: 20px;
       }
       .search {
         width: 75%;
@@ -38,7 +43,25 @@ form {
         color: #ffffff;
       }
       header{
-        background-color: #292f32;
+        background-color: #373b3d;
         margin-top: 0;
+        height: 10vh;
       }
+
+
+      @media (max-width: 600px) {
+        header form {
+          width: 330px;
+          margin-top: -9px;
+          padding-right: 20px;
+        }
+      }
+
+      @media (max-width: 1400px) {
+        header form {
+          width: 330px;
+          margin-top: -9px !important;
+          padding-right: 20px;
+      }
+    }
 </style>

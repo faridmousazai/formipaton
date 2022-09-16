@@ -6,8 +6,8 @@
     </section>
   </body>
   <footer class="footer">
-    <p>Mentions légales</p>
-    <p>Contactez nous</p>
+    <p>All rights reserved &copy; - 2022</p>
+    <p><a href="contact.vue">Contact us</a></p>
   </footer>
 
 
@@ -51,7 +51,7 @@ h2 {
   -webkit-text-fill-color: transparent;
   animation: textclip 2s linear infinite;
   display: inline-block;
-  font-size: 100px;
+  font-size: 80px;
 }
 
 @keyframes textclip {
@@ -59,6 +59,12 @@ h2 {
     background-position: 200% center;
   }
 }  
+
+@media (max-width: 600px) {
+  h2 {
+    font-size: 50px;
+  }
+}
 
 .footer{
   background-color: rgb(88, 86, 77);
@@ -69,10 +75,16 @@ h2 {
   
 }
 
-.footer p{
+.footer p {
   text-align: center;
-  font-size: 2rem;
-  padding-top: 1rem;
+  font-size: 1.3rem;
+  padding-top: 1.5rem;
+  color: #fff;
 } 
+
+.footer p a {
+  text-decoration: none;
+  color: #fff;
+}
 
 </style>

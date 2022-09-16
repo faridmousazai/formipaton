@@ -1,8 +1,8 @@
 <template>
 
     <body>
-        <h1>Acceuil Administrateur</h1>
         <div class="acceuil">
+            <h2>Acceuil Administrateur</h2>
             <p>
                 <button>
                     <router-link to="/createrecette" class="btn-default">Creer une Recette</router-link>
@@ -34,9 +34,26 @@ body {
 
 }
 
-h1 {
-    padding: 2rem;
+h2 {
+    text-align: center;
+    font-size: 50px;
     color: #fff;
+   display: block;
+   padding: 30px 0;
+   padding-top: 70px;
+}
+
+.acceuil {
+    padding-top: 100px;
+}
+
+@media (max-width: 600px) {
+    .acceuil {
+        padding-top: 50px;
+    }
+    h2{
+        font-size: 30px;
+    }
 }
 
 .acceuil input {

@@ -2,8 +2,8 @@
 
     <body>
         <div class="delete">
-            <h1>Effacer recette</h1>
-            <input type="text" v-model="recette" placeholder="Recette a effacer" /><br>
+            <h2>Effacer recette</h2>
+            <input type="text" v-model="recette" placeholder="Recette a effacer"><br>
 
             <button v-on:click="effacerRecette">Supprimer</button>
         </div>
@@ -57,10 +57,6 @@ body {
 
 }
 
-h1 {
-    padding: 2rem;
-    color: #fff;
-}
 
 .delete input {
     width: 320px;
@@ -84,5 +80,30 @@ h1 {
     color: #fff;
     cursor: pointer;
     border-radius: 15px;
+}
+
+.delete h2 {
+    text-align: center;
+    font-size: 50px;
+    color: #fff;
+    display: block;
+    padding: 30px 0;
+    padding-top: 150px;
+}
+
+
+
+@media (max-width: 1200px) {
+    .delete h2 {
+        font-size: 30px;
+        padding-top: 70px;
+    }
+}
+
+@media (max-width: 600px) {
+    .delete h2 {
+        font-size: 30px;
+        padding-top: 50px;
+    }
 }
 </style>
