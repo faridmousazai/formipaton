@@ -34,6 +34,10 @@ export default {
 </script>
 
 <style scoped>
+/*carracteristiques style du corps de la page : image de fond d'eccran
+ - pas de repetition de l'image
+ - affichage plein ecran
+*/
 body {
 
     background-image: url("https://i0.wp.com/bitebymichelle.com/wp-content/uploads/2016/07/A-IMG_3717.jpg?w=960");
@@ -41,6 +45,18 @@ body {
     background-size: cover;
 
 }
+
+/*
+carracteristiques style du champ titre h2 de la page : 
+        - texte centre, 
+        - taille de police, 
+        - couleur du texte, 
+        - affichage de bloc les uns apres les autres verticalement,
+        - espacement autour du bloc,
+        - espacement en haut du bloc
+
+        */
+
 
 h2 {
     text-align: center;
@@ -51,6 +67,7 @@ h2 {
     padding-top: 70px;
 }
 
+/*caracteristique de style du titre h2*/
 .edit .glass {
     width: 40%;
     margin: 0 auto;
@@ -59,6 +76,8 @@ h2 {
     /*backdrop-filter: blur(3px);
     border: 1px solid #fff;*/
 }
+
+/*adaptation responssive de l'affichage*/
 
 @media (max-width: 600px) {
     .edit .glass {
@@ -70,6 +89,8 @@ h2 {
         padding-top: 50px;
     }
 }
+
+/*adaptation responssive de l'affichage*/
 
 @media (max-width: 1200px) {
     .edit h2 {
@@ -83,6 +104,7 @@ h2 {
 
 }
 
+/*caracteristique de style de la class edit-input*/
 .edit input {
     width: 320px;
     height: 40px;
@@ -97,6 +119,7 @@ h2 {
     color: #fff;
 }
 
+/*caracteristique de style de la class edit-button*/
 .edit button {
     width: 320px;
     height: 40px;

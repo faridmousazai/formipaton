@@ -49,6 +49,10 @@ export default {
 </script>
 
 <style scoped>
+/*carracteristiques style du corps de la page : image de fond d'eccran
+ - pas de repetition de l'image
+ - affichage plein ecran
+*/
 body {
 
     background-image: url("https://www.manfrottoimaginemore.com/site/uploads/2014/03/Tavola-di-primavera-51-per-Manfrotto-768x509.jpg");
@@ -57,6 +61,16 @@ body {
 
 }
 
+/*
+carracteristiques style du champ titre h2 de la page : 
+        - texte centre, 
+        - taille de police, 
+        - couleur du texte, 
+        - affichage de bloc les uns apres les autres verticalement,
+        - espacement autour du bloc,
+        - espacement en haut du bloc
+
+        */
 
 .delete input {
     width: 320px;
@@ -72,6 +86,7 @@ body {
     color: #fff;
 }
 
+/* carracteristique style de la classe delete-button*/
 .delete button {
     width: 320px;
     height: 40px;
@@ -82,6 +97,7 @@ body {
     border-radius: 15px;
 }
 
+/* carracteristique style ddu titre h2*/
 .delete h2 {
     text-align: center;
     font-size: 50px;
@@ -91,7 +107,7 @@ body {
     padding-top: 150px;
 }
 
-
+/*adaptation responssive de l'affichage*/
 
 @media (max-width: 1200px) {
     .delete h2 {

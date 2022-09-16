@@ -35,6 +35,10 @@ export default {
 </script>
 
 <style scoped>
+/*carracteristiques style du corps de la page : image de fond d'eccran
+ - pas de repetition de l'image
+ - affichage plein ecran
+*/
 body {
 
     background-image: url("https://www.pixelstalk.net/wp-content/uploads/2016/08/Best-Food-HD-Backgrounds.jpg");
@@ -43,6 +47,16 @@ body {
 
 }
 
+/*
+carracteristiques style du champ titre h2 de la page : 
+        - texte centre, 
+        - taille de police, 
+        - couleur du texte, 
+        - affichage de bloc les uns apres les autres verticalement,
+        - espacement autour du bloc,
+        - espacement en haut du bloc
+
+        */
 .edit h2 {
     text-align: center;
     font-size: 50px;
@@ -51,7 +65,7 @@ body {
     padding: 30px 0;
 }
 
-
+/* carracteristique style de la class edit-input*/
 
 .edit input {
     width: 320px;
@@ -67,6 +81,7 @@ body {
     color: #fff;
 }
 
+/* carracteristique style de la class edit-button*/
 .edit button {
     width: 320px;
     height: 40px;
@@ -77,6 +92,7 @@ body {
     border-radius: 15px;
 }
 
+/*adaptation responssive de l'affichage*/
 @media (max-width: 600px) {
     .edit input {
         width: 400px;
