@@ -29,7 +29,7 @@ form#search {
       #search input {
         padding: 4px 10px;
         font-size: 16px;
-        border: 0;
+        border: 1px solid rgb(213, 194, 194);
         outline: 1px solid #fff;
         background-color: transparent;
         margin-top: 20px;
@@ -43,7 +43,7 @@ form#search {
         color: #ffffff;
       }
       header{
-        background-color: #4f5456;
+        background-color: #303537;
         margin-top: 0;
         height: 10vh;
       }
