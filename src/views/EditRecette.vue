@@ -12,7 +12,6 @@
         </div>
     </body>
 
-
 </template>
 
 <script>
@@ -35,23 +34,37 @@ export default {
 </script>
 
 <style scoped>
+/*carracteristiques style du corps de la page : image de fond d'eccran
+ - pas de repetition de l'image
+ - affichage plein ecran
+*/
 body {
 
-    background-image: url("https://s1.1zoom.me/big0/115/Still-life_Pepper_Tomatoes_Bottle_Cutting_board_524518_1280x839.jpg");
+    background-image: url("https://www.pureeatingway.com/wp-content/uploads/2020/09/banner.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 
 }
 
+/*
+carracteristiques style du champ titre h2 de la page : 
+        - texte centre, 
+        - taille de police, 
+        - couleur du texte, 
+        - affichage de bloc les uns apres les autres verticalement,
+        - espacement autour du bloc,
+        - espacement en haut du bloc
+
+        */
 .edit h2 {
     text-align: center;
     font-size: 50px;
-    color: #fff;
-   display: block;
-   padding: 30px 0;
+    color: rgb(235, 228, 228);
+    display: block;
+    padding: 30px 0;
 }
 
-
+/* carracteristique style de la class edit-input*/
 
 .edit input {
     width: 320px;
@@ -61,12 +74,13 @@ body {
     margin-bottom: 5px;
     margin-right: auto;
     margin-left: auto;
-    border: 2px solid rgb(193, 210, 96);
+    border: 2px solid rgb(200, 163, 114);
     border-radius: 15px;
     background: rgb(53, 57, 56);
     color: #fff;
 }
 
+/* carracteristique style de la class edit-button*/
 .edit button {
     width: 320px;
     height: 40px;
@@ -76,7 +90,8 @@ body {
     cursor: pointer;
     border-radius: 15px;
 }
-
+/*For mobile*/
+/*adaptation responssive de l'affichage*/
 @media (max-width: 600px) {
     .edit input {
         width: 400px;
@@ -90,6 +105,4 @@ body {
         font-size: 30px;
     }
 }
-
-
 </style>

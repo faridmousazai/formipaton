@@ -5,11 +5,6 @@
       <h2>FARMIPATON</h2>
     </section>
   </body>
-  <footer class="footer">
-    <p>All rights reserved &copy; - 2022</p>
-    <p><a href="contact.vue">Contact us</a></p>
-  </footer>
-
 
 </template>
 
@@ -59,32 +54,11 @@ h2 {
     background-position: 200% center;
   }
 }  
-
-@media (max-width: 600px) {
+/*For mobile*/
+@media (max-width: 480px) {
   h2 {
-    font-size: 50px;
+    font-size: 30px;
   }
-}
-
-.footer{
-  background-color: rgb(88, 86, 77);
-  height: 10vh;
-  border: solid black 1px;
-  display: flex;
-  justify-content: space-around;
-  
-}
-
-.footer p {
-  text-align: center;
-  font-size: 1.3rem;
-  padding-top: 1.5rem;
-  color: #fff;
-} 
-
-.footer p a {
-  text-decoration: none;
-  color: #fff;
 }
 
 </style>

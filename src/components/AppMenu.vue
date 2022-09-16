@@ -70,14 +70,14 @@ export default {
   cursor: pointer;
   z-index: 1;
 }
-
+/*For mobile*/
 @media (max-width: 600px) {
   .menu__btn {
     margin-top: -5px;
     padding-left: 10px;
   }
 }
-
+/*For Computer*/
 @media (max-width: 1400px) {
   .menu__btn {
     margin-top: -9px;

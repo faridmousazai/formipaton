@@ -9,7 +9,7 @@ import DeleteRecette from "../views/DeleteRecette.vue";
 import EditRecette from "../views/EditRecette.vue";
 import AcceuilAdmin from "../views/AcceuilAdmin.vue"
 import AcceuilEditor from "../views/AcceuilEditor.vue"
-
+import AppContact from '../views/AppContact.vue'
 const routes = [
   {
     path: "/",
@@ -58,6 +58,11 @@ const routes = [
     name: "AcceuilEditor",
     component: AcceuilEditor,
   },
+  {
+    path: "/contact",
+    name: "ContactPage",
+    component:   AppContact
+  }
 ];
 
 const router = createRouter({

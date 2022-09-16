@@ -22,23 +22,38 @@
 </script>
 
 <style scoped>
+/*carracteristiques style du corps de la page : image de fond d'eccran
+ - pas de repetition de l'image
+ - affichage plein ecran
+*/
 body {
 
-    background-image: url("https://th.bing.com/th/id/OIP.nUSsTa_pPTgDx4iHpMTKEQHaEo?pid=ImgDet&rs=1");
+    background-image: url("https://img.freepik.com/foto-gratis/mesa-rustica-negra-rama-tomates-hierbas-vista-superior_73558-2297.jpg?size=626&ext=jpg");
     background-repeat: no-repeat;
     background-size: cover;
 
 }
 
+/*
+carracteristiques style du champ titre h2 de la page : 
+        - texte centre, 
+        - taille de police, 
+        - couleur du texte, 
+        - affichage de bloc les uns apres les autres verticalement,
+        - espacement autour du bloc,
+        - espacement en haut du bloc
+
+        */
 h2 {
     text-align: center;
     font-size: 50px;
     color: #fff;
-   display: block;
-   padding: 30px 0;
-   padding-top: 150px;
+    display: block;
+    padding: 30px 0;
+    padding-top: 150px;
 }
 
+/* carracteristique style de la classe acceuil-input*/
 .acceuil input {
     width: 320px;
     height: 40px;
@@ -51,6 +66,7 @@ h2 {
     border-radius: 15px;
 }
 
+/* carracteristique style de la classe acceuil-button*/
 .acceuil button {
     width: 320px;
     height: 40px;
@@ -62,6 +78,7 @@ h2 {
     margin-bottom: 20px;
 }
 
+/* carracteristique style de la classe acceuil-btn-default*/
 .btn-default {
     color: white;
     text-decoration: none;
