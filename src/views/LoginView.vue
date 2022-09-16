@@ -1,6 +1,7 @@
  <template>
     <body> 
-    <h1>Login</h1>
+    <h2>Login</h2>
+    <img src="../assets/images/98065_password_512x512.png" alt="">
     <div class="login">
         <input type="text" v-model="email" placeholder="Enter Your Email">
         <input type="password" v-model="password" placeholder="Enter Your Password">
@@ -50,15 +51,13 @@ export default {
 
 <style scoped>
 body {
-    background-color: rgb(33, 56, 59);
-    background-image: url("https://media.istockphoto.com/illustrations/clean-abstract-background-illustration-id518068814?k=6&m=518068814&s=170667a&w=0&h=SkgQ0sg0zzAe-lAZ30BnZ_LmxnDR5vNozCRv_gsjtNo=");
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: rgb(110, 99, 99);
 
     }
-    h1{
+    h2{
         padding: 2rem;
-        color: #fff;
+        color: #000;
+        margin-bottom: -15px;
     }
     .login input{
         width: 320px;
@@ -70,6 +69,11 @@ body {
         margin-left: auto;
         border: 1px solid rgb(193, 210, 96);
         border-radius: 15px;
+    }
+
+     img {
+        width: 200px;
+        margin-bottom: 20px;
     }
     .login button{
         width: 320px;
@@ -86,5 +90,11 @@ body {
     .btn-default{
         color: white;
         text-decoration: none;
+    }
+
+    @media (max-width: 600px) {
+        .login {
+            padding-bottom: 30px;
+        }
     }
 </style>

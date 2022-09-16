@@ -1,6 +1,6 @@
 <template>
     <body>
-    <h1>Sign Up</h1>
+    <h2>Sign Up</h2>
     <div class="signup">
         <input type="text" v-model="name" placeholder="Enter Name">
         <input type="text" v-model="email" placeholder="Enter Email">
@@ -31,14 +31,16 @@ export default {
 </script>
 <style scoped>
     body{
-        background-image: url("https://wallpapersmug.com/download/1024x768/ea4c62/abstract-colorful-design-4k.jpg");
-        background-repeat: no-repeat;
-        background-size: cover;
+        background: linear-gradient(to right, #555, #333);
     }
-    h1{
+    h2{
         color: #fff;
         padding: 2rem;
     }
+
+   .signup h2 {
+    margin-left: 0;
+   } 
 .signup input {
     width: 320px;
     height: 40px;

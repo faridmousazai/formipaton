@@ -2,7 +2,7 @@
 
     <body>
         <div class="edit">
-            <h1>Modification recette</h1>
+            <h2>Modification recette</h2>
             <input type="text" v-model="recette" placeholder="Recette a modifier">
             <input type="text" v-model="saison" placeholder="Modifier saison">
             <input type="text" v-model="EtapesPrep" placeholder="Modifier les etapes de preparation">
@@ -43,10 +43,15 @@ body {
 
 }
 
-h1 {
-    padding: 2rem;
+.edit h2 {
+    text-align: center;
+    font-size: 50px;
     color: #fff;
+   display: block;
+   padding: 30px 0;
 }
+
+
 
 .edit input {
     width: 320px;
@@ -71,4 +76,20 @@ h1 {
     cursor: pointer;
     border-radius: 15px;
 }
+
+@media (max-width: 600px) {
+    .edit input {
+        width: 400px;
+    }
+
+    .edit button {
+        width: 400px;
+    }
+
+    .edit h2 {
+        font-size: 30px;
+    }
+}
+
+
 </style>

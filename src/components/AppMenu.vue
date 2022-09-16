@@ -29,7 +29,7 @@
         <router-link to="/AcceuilEditor" class="menu__item">Acceuil Editeur</router-link>
       </li>
 
-      <li v-if="user_is_connected" @click="logout"><span class="menu__item">Logout</span></li>
+      <li v-if="user_is_connected" @click="logout"><span class="menu__item hover">Logout</span></li>
     </ul>
   </div>
 
@@ -54,6 +54,7 @@ export default {
 #menu__toggle:checked+.menu__btn>span::after {
   top: 0;
   transform: rotate(90deg);
+  
 }
 
 #menu__toggle:checked~.menu__box {
@@ -62,12 +63,26 @@ export default {
 
 .menu__btn {
   position: absolute;
-  top: 20px;
-  left: 20px;
+  top: 33px;
+  left: 30px;
   width: 30px;
   height: 50px;
   cursor: pointer;
   z-index: 1;
+}
+
+@media (max-width: 600px) {
+  .menu__btn {
+    margin-top: -5px;
+    padding-left: 10px;
+  }
+}
+
+@media (max-width: 1400px) {
+  .menu__btn {
+    margin-top: -9px;
+    padding-left: 10px;
+  }
 }
 
 .menu__btn>span,
@@ -151,5 +166,10 @@ export default {
 #menu__toggle {
   display: none !important;
   /* visibility: hidden; */
+}
+
+
+.hover {
+  cursor: pointer;
 }
 </style>

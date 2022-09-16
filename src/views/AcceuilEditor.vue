@@ -1,7 +1,7 @@
 <template>
 
     <body>
-        <h1>Acceuil Editeur</h1>
+        <h2>Acceuil Editeur</h2>
         <div class="acceuil">
             <p>
                 <button>
@@ -30,9 +30,13 @@ body {
 
 }
 
-h1 {
-    padding: 2rem;
+h2 {
+    text-align: center;
+    font-size: 50px;
     color: #fff;
+   display: block;
+   padding: 30px 0;
+   padding-top: 150px;
 }
 
 .acceuil input {
