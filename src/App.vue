@@ -13,19 +13,22 @@
   <AppMenu />
   <AppSearch/>
   <router-view/>
-
+  <AppFooter/>
+  
 </template>
 
 <script>
 //
 import AppMenu from "@/components/AppMenu.vue"
 import AppSearch from "@/components/AppSearch.vue"
+import AppFooter from '@/components/AppFooter.vue'
 export default {
   name: 'App',
   components: {
     AppMenu,
-    AppSearch
-  }
+    AppSearch,
+    AppFooter
+}
 }
 </script>
 
