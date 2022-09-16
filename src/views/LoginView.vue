@@ -13,6 +13,7 @@
        
     </div>
 </body>
+
 </template>
 
 <script>
@@ -51,12 +52,13 @@ export default {
 
 <style scoped>
 body {
-    background-color: rgb(110, 99, 99);
-
+    background-image: url("https://www.sagatraining.ca/wp-content/uploads/2018/10/background-images-for-login-form-8.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
     }
     h2{
         padding: 2rem;
-        color: #000;
+        color: rgb(231, 220, 220);
         margin-bottom: -15px;
     }
     .login input{
@@ -97,4 +99,6 @@ body {
             padding-bottom: 30px;
         }
     }
+
+    
 </style>

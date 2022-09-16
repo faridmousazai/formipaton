@@ -68,5 +68,6 @@ export default {
      width: 30vw;
      text-align: justify;
      text-align: center;
-  }    
+  }
+ 
 </style>

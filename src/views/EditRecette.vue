@@ -12,7 +12,6 @@
         </div>
     </body>
 
-
 </template>
 
 <script>
@@ -90,6 +89,5 @@ body {
         font-size: 30px;
     }
 }
-
 
 </style>

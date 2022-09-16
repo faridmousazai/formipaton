@@ -18,6 +18,7 @@
             </p>
         </div>
     </body>
+   
 </template>
 
 <script>
@@ -83,5 +84,6 @@ h2 {
     color: white;
     text-decoration: none;
 }
+
 </style>
   

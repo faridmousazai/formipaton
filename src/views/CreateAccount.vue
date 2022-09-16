@@ -31,7 +31,9 @@ export default {
 </script>
 <style scoped>
     body{
-        background: linear-gradient(to right, #555, #333);
+       background-image: url("https://th.bing.com/th/id/R.790153674a994fa96fb4ce5d33d23bc6?rik=7UiaXeHJw88D5w&riu=http%3a%2f%2fonlinetests.byjusclasses.com%2fLibrary%2fassets%2fimages%2floginimg.jpg&ehk=7Jug8R97CCYlpN0Xq%2fqtuJMeBXd0vHJgqa1NzcRFjw0%3d&risl=&pid=ImgRaw&r=0");
+       background-repeat: no-repeat;
+       background-size: cover;
     }
     h2{
         color: #fff;
@@ -69,5 +71,7 @@ export default {
 p{
     padding: 0.8rem;
 }
+
+  
 </style>
   
