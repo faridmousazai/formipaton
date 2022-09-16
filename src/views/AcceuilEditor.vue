@@ -24,7 +24,7 @@
 <style scoped>
 body {
 
-    background-image: url("https://th.bing.com/th/id/OIP.nUSsTa_pPTgDx4iHpMTKEQHaEo?pid=ImgDet&rs=1");
+    background-image: url("https://img.freepik.com/foto-gratis/mesa-rustica-negra-rama-tomates-hierbas-vista-superior_73558-2297.jpg?size=626&ext=jpg");
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -34,9 +34,9 @@ h2 {
     text-align: center;
     font-size: 50px;
     color: #fff;
-   display: block;
-   padding: 30px 0;
-   padding-top: 150px;
+    display: block;
+    padding: 30px 0;
+    padding-top: 150px;
 }
 
 .acceuil input {

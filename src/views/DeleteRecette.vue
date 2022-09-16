@@ -13,10 +13,10 @@
             
 <script>
 
-/*const tabNomRecette = ["oeufs", "omelette", "salade", "pomme", "flan"];
-const recetteAEffacer = recette;
-const longTab = tabNomRecette.length;*/
-const recette = '';
+const tabNomRecette = ["oeufs", "omelette", "salade", "pomme", "flan"];
+
+const longTab = tabNomRecette.length;
+
 
 export default {
     name: "EffacerRecette",
@@ -25,21 +25,22 @@ export default {
             recette: '',
         }
     },
-    /* props: {
-         recette: { type: String }
-     },*/
+
 
     methods: {
 
         effacerRecette() {
-            console.log(recette);
-            /*for (let i = 0; i <= longTab; i = i + 1) {
+            console.log(this.recette);
+            alert(this.recette + ' est supprimée')
 
-                if (tabNomRecette[i] == recetteAEffacer) {
-                    tabNomRecette.splice(i, 1);
+            for (let i = 0; i <= longTab; i = i + 1) {
+
+                if (this.tabNomRecette[i] == this.recette) {
+                    this.tabNomRecette.splice(i, 1);
                     return ' Recette Supprimée'
+
                 }
-            }*/
+            }
         }
     }
 } 
@@ -48,7 +49,7 @@ export default {
 <style scoped>
 body {
 
-    background-image: url("https://s1.1zoom.me/b5050/759/Fruit_Vegetables_Tomatoes_Pepper_Grapes_Onion_512572_3840x2400.jpg");
+    background-image: url("https://www.manfrottoimaginemore.com/site/uploads/2014/03/Tavola-di-primavera-51-per-Manfrotto-768x509.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -82,10 +83,10 @@ body {
 .delete h2 {
     text-align: center;
     font-size: 50px;
-    color: #fff;
-   display: block;
-   padding: 30px 0;
-   padding-top: 150px;
+    color: rgb(3, 3, 3);
+    display: block;
+    padding: 30px 0;
+    padding-top: 150px;
 }
 
 
