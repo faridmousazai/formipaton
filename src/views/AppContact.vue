@@ -57,7 +57,7 @@ body{
 }
  #msg{
     border: 1px solid skyblue;
-    background: rgb(145, 151, 154);
+    background: rgb(217, 222, 224);
     color: rgb(28, 24, 24);
     cursor: pointer;
     border-radius: 15px;
